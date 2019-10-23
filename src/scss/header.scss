@@ -1,0 +1,79 @@
+.header {
+  padding: 21px 0 11px 0;
+  font-size: $header-fs;
+
+  .header__contact {
+    height: 47px;
+    display: flex;
+    align-items: center;
+  }
+
+  .phone,
+  .email {
+    font-family: $Regular;
+    color: $header-color;
+    img {
+      margin-right: 7px;
+    }
+  }
+
+  .language-wrapper {
+    font-family: $Medium;
+    color: $language-color;
+    display: flex;
+    justify-content: flex-end;
+    input {
+      display: none;
+    }
+    label {
+      cursor: pointer;
+      margin: 0;
+    }
+
+    .language {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 120px;
+      height: 32px;
+      background-color: #F2F5F9;
+      border-radius: 50px;
+    }
+
+    .openLanguageEst,
+    .openLanguageEng {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      width: 52px;
+      justify-content: center;
+      border-radius: 50px;
+      transition: .5s background-color;
+    }
+    #languageEst:checked ~ .openLanguageEst {
+      background-color: #fff;
+      box-shadow: -2px 4px 8px 0 rgba(3,20,54,0.15);
+    }
+    #languageEng:checked ~ .openLanguageEng {
+      background-color: #fff;
+      box-shadow: 2px 4px 8px 0 rgba(3,20,54,0.15);
+    }
+
+
+  }
+
+  .openPhoneNav-wrapper {
+    input {
+      display: none;
+    }
+    label {
+      margin: 0;
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+
+}

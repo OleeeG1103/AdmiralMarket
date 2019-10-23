@@ -1,0 +1,17 @@
+.footer-wrapper {
+  background-color: $footer-bg-color;
+}
+
+.footer {
+  padding: 50px 0 75px 0;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  font-family: $Medium;
+  font-size: 16px;
+
+  &__logo {
+    display: flex;
+    align-items: center;
+  }
+}

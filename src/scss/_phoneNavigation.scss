@@ -1,0 +1,149 @@
+.phoneNavigation-wrapper {
+  position: fixed;
+  top: 0;
+  max-width: 100%;
+  height: 100vh;
+  margin: 0;
+  background: rgba(0, 0, 0, 0.50);
+  z-index: 10;
+  visibility: hidden;
+}
+
+.phoneNavigation {
+  height: 100vh;
+  background-color: $phone-nav-bg;
+  padding: 0;
+  color: $heading-blocks-color;
+  font-family: $Medium;
+  font-size: 17px;
+
+  position: relative;
+  right: -100%;
+  input {
+    display: none;
+  }
+
+  &__header {
+    height: 68px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 10px 0 10px 0;
+    width: 97%;
+    label {
+      cursor: pointer;
+    }
+
+  }
+
+  &__content, &__footer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 35px;
+
+    ul {
+      width: 90%;
+      list-style-type: none;
+      a {
+        text-decoration: none;
+        color: $heading-blocks-color;
+        &:hover {
+          color: $history-year-color;
+        }
+      }
+      li {
+        border-left: none;
+        border-right: none;
+        padding-left: 0;
+        padding-right: 0;
+      }
+      .list-group-item:last-child {
+        border-bottom: none;
+      }
+      .list-group-item:first-child {
+        border-top: none;
+      }
+    }
+  }
+
+  &__content-accordion {
+    .card { /* ---------------------> custom accordion components bootstrap */
+      border: none;
+      .card-header {
+        padding: 0;
+        background-color: transparent;
+        border: none;
+      }
+      .btn, button {
+        padding: 0;
+        font-size: 17px;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+
+        img {
+          transition: 0.5s transform;
+        }
+      }
+
+      button[aria-expanded = true] {
+        img {
+          transform: rotate(45deg);
+        }
+      }
+      .btn-link {
+        color: $heading-blocks-color;
+        text-decoration: none;
+        &:hover,
+        &:focus{
+          color: $history-year-color;
+        }
+      }
+    }  /* ---------------------> /custom accordion components bootstrap */
+  }
+
+  &__footer {
+
+      li {
+        border: none;
+
+        img {
+          margin-right: 10px;
+        }
+      }
+    }
+  .language {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 120px;
+    height: 32px;
+    background-color: #F2F5F9;
+    border-radius: 50px;
+  }
+  .openLanguageEst,
+  .openLanguageEng {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    width: 52px;
+    justify-content: center;
+    border-radius: 50px;
+    transition: .5s background-color;
+    cursor: pointer;
+    margin: 0;
+  }
+  #phoneLanguageEst:checked ~ .openLanguageEst {
+    background-color: #fff;
+    box-shadow: -2px 4px 8px 0 rgba(3,20,54,0.15);
+  }
+  #phoneLanguageEng:checked ~ .openLanguageEng {
+    background-color: #fff;
+    box-shadow: 2px 4px 8px 0 rgba(3,20,54,0.15);
+  }
+
+}
+
+#openPhoneNavigation:checked ~ #phoneNavModal {
+  visibility: visible;
+}

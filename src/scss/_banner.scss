@@ -1,0 +1,86 @@
+.banner-wrapper {
+  padding: 0;
+  .row {
+    margin: 0;
+  }
+}
+.banner {
+  width: 100%;
+  height: 550px;
+  background-image: url("../img/hero-image.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+
+  .logo {
+    width: 990px;
+    height: 450px;
+    position: relative;
+
+    .blue-ring {
+      background-image: url("../img/blue-ring.png");
+      background-repeat: no-repeat no-repeat;
+      background-size: contain;
+      width: 178px;
+      height: 179px;
+      position: absolute;
+      left: 150px;
+    }
+    .red-ring {
+      background-image: url("../img/red-ring.png");
+      background-repeat: no-repeat no-repeat;
+      background-size: contain;
+      width: 178px;
+      height: 179px;
+      position: absolute;
+      top: 130px;
+    }
+
+    .heading {
+      background-image: url("../img/darkblue-arrow.png");
+      background-repeat: no-repeat no-repeat;
+      background-size: contain;
+      width: 670px;
+      height: 120px;
+      position: absolute;
+      left: 100px;
+      top: 80px;
+      z-index: 1;
+      font-family: $Bold;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      font-size: $banner-heading-fs;
+      color: $banner-color;
+    }
+
+    .big-blue-box {
+      background-image: url("../img/big-blue-box.png");
+      background-repeat: no-repeat no-repeat;
+      width: 770px;
+      height: 315px;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      display: flex;
+      justify-content: center;
+      font-size: $banner-text-fs;
+      padding: 60px 45px 0 35px;
+      color: $banner-color;
+
+      .small-blue-box {
+        background-image: url("../img/small-blue-box.png");
+        background-repeat: no-repeat no-repeat;
+        width: 120px;
+        height: 165px;
+        position: absolute;
+        bottom: 0;
+        left: 200px;
+      }
+    }
+
+
+  }
+}

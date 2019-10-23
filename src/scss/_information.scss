@@ -1,0 +1,39 @@
+.information {
+  padding: 65px 0 50px 0;
+  color: $heading-blocks-color;
+
+  &__heading {
+    text-align: center;
+    font-size: $heading-blocks-fs;
+    font-family: $Bold;
+  }
+
+  &__card {
+    width: 100%;
+    margin-top: 55px;
+
+    .logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .text {
+      padding: 26px 0 0 0;
+      font-family: $Regular;
+      color: $card-color;
+      font-size: $information-card-fs;
+    }
+  }
+&__btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  button {
+    background-color: $information-btn;
+    border-color: $information-btn;
+    width: 180px;
+    height: 43px;
+  }
+}
+}
