@@ -7327,6 +7327,7 @@ a.text-dark:hover, a.text-dark:focus {
   color: #173269;
   font-family: "AvenirNext-Medium", sans-serif;
   font-size: 17px;
+  overflow-y: auto;
   position: relative;
   right: -100%; }
   .phoneNavigation input {

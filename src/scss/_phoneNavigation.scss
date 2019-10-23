@@ -16,7 +16,7 @@
   color: $heading-blocks-color;
   font-family: $Medium;
   font-size: 17px;
-
+  overflow-y: auto;
   position: relative;
   right: -100%;
   input {
