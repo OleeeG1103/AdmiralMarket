@@ -13,5 +13,10 @@
   &__logo {
     display: flex;
     align-items: center;
+    a {
+      text-decoration: none;
+      color: #FFFFFF;
+      font-family: $Bold;
+    }
   }
 }
