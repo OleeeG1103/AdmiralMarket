@@ -7227,6 +7227,8 @@ a.text-dark:hover, a.text-dark:focus {
       display: flex;
       justify-content: center;
       align-items: center; }
+      .information__card .logo img {
+        border-radius: 50%; }
     .information__card .text {
       padding: 26px 0 0 0;
       font-family: "AvenirNext-Regular", sans-serif;
@@ -7298,7 +7300,8 @@ a.text-dark:hover, a.text-dark:focus {
     font-family: "AvenirNext-Medium", sans-serif; }
   .awards__list .item img {
     width: 75%;
-    height: auto; }
+    height: auto;
+    border-radius: 50%; }
 
 .footer-wrapper {
   background-color: #173269; }
