@@ -7299,8 +7299,8 @@ a.text-dark:hover, a.text-dark:focus {
   .awards__list .item__text-light {
     font-family: "AvenirNext-Medium", sans-serif; }
   .awards__list .item img {
-    width: 75%;
-    height: auto;
+    width: 80px;
+    height: 80px;
     border-radius: 50%; }
 
 .footer-wrapper {
@@ -7447,9 +7447,6 @@ a.text-dark:hover, a.text-dark:focus {
     text-align: center; } }
 
 @media (max-width: 767px) {
-  .awards__list .item img {
-    width: auto;
-    height: auto; }
   .footer__logo {
     display: flex;
     justify-content: center;
